@@ -1,7 +1,7 @@
 from collections import deque
 
-# bfx 메서드 정의
-def bfx(graph, start, visited):
+# bfs 메서드 정의
+def bfs(graph, start, visited):
     # 큐 구현을 위해 deque 라이브러리 사용
     queue = deque([start])
     
@@ -20,6 +20,7 @@ def bfx(graph, start, visited):
                 queue.append(i)
                 visited[i] = True
 
+# 각 노드가 연결된 정보를 표현
 graph = [
     [],
     [2,3,8],
@@ -28,5 +29,11 @@ graph = [
     [3,5],
     [3,4],
     [7],
-    [2,6]
+    [2,6,8],
+    [1,7]
 ]
+
+# 각 노드가 방문된 정보를 표현
+visited = [False] * 9
+
+bfs(graph, 1, visited)
