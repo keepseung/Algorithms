@@ -27,7 +27,7 @@ def solution(id_list, report, k):
     
     answer = [0] * len(id_list) # 유저 별 알림 횟수 리스트, 0으로 초기화한다.
     
-    for i in rang---e(len(id_list)):
+    for i in range(len(id_list)):
         idValue = id_list[i]
         cnt = 0
         if idValue in reportDic:
