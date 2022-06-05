@@ -5,5 +5,6 @@ array.sort()
 min = 1
 for i in range(n):
     if array[i] < min:
-        min = array[1]
+        min = array[i]
+    
 print(min)
