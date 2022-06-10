@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class 개선된다익스트라 {
+public class 개선된다익스트라알고리즘 {
 
     public static final int INF = (int) 1e9; // 무한을 의미하는 값으로 10억 설정
     public static int n,m,start; // 노드의 개수, 간선 개수, 시작 노드 번호
@@ -32,6 +32,7 @@ public class 개선된다익스트라 {
                 int cost = d[now]+graph.get(now).get(i).getDistance();
                 // 현재 노드를 거쳐서, 다른 노드로 이동하는 거리가 더 짧은 경우
                 if (cost < d[graph.get(now).get(i).getIndex()]){
+                    d[graph.get(now).get(i).getIndex()] = cost;
                     pq.offer(new Node(graph.get(now).get(i).getIndex(), cost));
                 }
             }
