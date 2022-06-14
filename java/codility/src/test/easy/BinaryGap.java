@@ -27,7 +27,7 @@ public class BinaryGap {
                 // 현재가 1인 경우
                 if (binary.charAt(i)=='1') {
                     maxLength = Math.max(maxLength, i-startIdx-1);
-                    startIdx = -1; // 시작 인덱스 초기화
+                    startIdx = i; // 시작 인덱스 초기화
                 }
             }
         }
