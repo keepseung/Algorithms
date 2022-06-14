@@ -1,6 +1,6 @@
 package test.easy;
 
-public class OddOccurrence {
+public class OddOccurrenceInArray오답 {
     public int solution(int[] A) {
         // 값의 개수를 가진 계수 배열을 사용할까
         boolean[] paried = new boolean[A.length];

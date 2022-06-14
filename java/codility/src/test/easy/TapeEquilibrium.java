@@ -1,9 +1,9 @@
 package test.easy;
 
-public class AbsSum {
+public class TapeEquilibrium {
     public int solution(int[] A) {
         int maxResult = (int) 1e9; // 10억을 큰수로 지정
-        for (int p =1; p <A.length ; p++){
+        for (int p =1; p <A.length-1 ; p++){
             // p보다 작은 값들의 합
             int leftSum = 0;
             for (int i =0; i<p; i++){
